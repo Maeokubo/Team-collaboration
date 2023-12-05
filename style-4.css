@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+/* font-family: 'Baloo Bhai 2', sans-serif;
+
+font-family: 'DM Sans', sans-serif;
+
+font-family: 'Poppins', sans-serif; */
+
+:root {
+  --licorice: #221314;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------places&footer-text----------------*/
+.places-header-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: var(--licorice);
+  font-size: 48px;
+  margin-top: 70px;
+  line-height: 68px;
+}
+
+.subscribe-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: var(--licorice);
+  font-size: 48px;
+  line-height: 68px;
+}
+
+.tour-number {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  color: #5a7184;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.country-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--licorice);
+  text-align: center;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.company-name {
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-weight: 700;
+  color: var(--licorice);
+  font-size: 38px;
+  line-height: normal;
+}
+.dot {
+  color: #fe5b3e;
+  margin: -8px;
+}
+
+.copyright-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  color: var(--licorice);
+  font-size: 18px;
+  line-height: normal;
+}
+
+.subscribe-button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*----------------figure----------------*/
+.places-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1920px;
+  gap: 50px;
+  background-color: white;
+}
+
+.map {
+  position: relative;
+}
+.map-img {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.flag {
+  width: 120px;
+  height: 120px;
+}
+
+.mexico,
+.france,
+.australia {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.mexico {
+  top: 300px;
+  left: 425px;
+}
+
+.france {
+  top: 190px;
+  left: 910px;
+}
+
+.australia {
+  top: 480px;
+  left: 1430px;
+}
+
+.flag-circle {
+  background: white;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: 5px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  z-index: 0;
+  position: absolute;
+  box-shadow: 0px 0px 40px rgba(55, 55, 55, 0.3);
+}
+.flag-circle.mexico-border {
+  top: 300px;
+  left: 425px;
+}
+.flag-circle.france-border {
+  top: 190px;
+  left: 910px;
+}
+.flag-circle.australia-border {
+  top: 480px;
+  left: 1430px;
+}
+
+/*----------------footer----------------*/
+
+.footer-bg-img {
+  width: 1920px;
+  height: 864px;
+  background-repeat: no-repeat;
+  z-index: -5;
+  position: absolute;
+}
+.footer-bg-gradient {
+  width: 1920px;
+  height: 864px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.6)
+  );
+  z-index: -2;
+  position: absolute;
+}
+
+.footer-header {
+  display: flex;
+}
+
+.subscribe-text {
+  margin-top: 260px;
+  margin-left: 250px;
+  margin-bottom: 50px;
+}
+
+.email-form {
+  position: relative;
+  margin-left: 250px;
+  width: 575px;
+}
+
+.input-email,
+.input-your-email {
+  width: 574px;
+  height: 100px;
+  border: none;
+  border-radius: 20px;
+}
+
+.input-email::placeholder,
+.input-your-email::placeholder {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #a8a8a8;
+}
+
+.input-email {
+  display: inline-block;
+}
+.input-your-email {
+  display: none;
+}
+
+.subscribe-button {
+  width: 177px;
+  height: 70px;
+  border: none;
+  border-radius: 15px;
+  background-image: linear-gradient(180deg, #fe5b3e 0%, #fe7b49 100%);
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  aspect-ratio: 1;
+}
+input:focus {
+  outline: none;
+}
+input[type="email"] {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 30px;
+}
+
+.fa-arrow-right {
+  margin: 5px;
+}
+
+.company-name {
+  margin-top: 90px;
+  margin-left: 250px;
+}
+
+.copyright-text {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  margin-left: 250px;
+  position: relative;
+  width: 100%;
+}
+
+.sns-icon {
+  display: flex;
+  gap: 30px;
+  margin-left: 30px;
+}
+
+.fa-instagram {
+  margin-left: 1px;
+}
+
+.fa-linkedin {
+  margin-left: 3px;
+}
+
+.icon-circle-group {
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  top: -13px;
+  left: 513px;
+}
+
+.circle {
+  background: #e2e2ea;
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  z-index: -1;
+}
+
+/*----------------Media Queries----------------*/
+@media only screen and (max-width: 375px) {
+  .places-header-text {
+    font-size: 24px;
+    margin-top: 47px;
+    line-height: 34px;
+  }
+  .subscribe-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .country-name,
+  .tour-number {
+    visibility: hidden;
+  }
+  .company-name {
+    font-size: 38px;
+  }
+  .copyright-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .places-content-container {
+    width: 100vw;
+  }
+  .map-img {
+    width: 355px;
+    height: 186px;
+    margin: auto;
+    padding: 10px;
+  }
+  .flag {
+    width: 28px;
+    height: 28px;
+  }
+  .mexico,
+  .flag-circle.mexico-border {
+    top: 70px;
+    left: 52px;
+  }
+  .france,
+  .flag-circle.france-border {
+    top: 50px;
+    left: 160px;
+  }
+  .australia,
+  .flag-circle.australia-border {
+    top: 110px;
+    left: 275px;
+  }
+  .flag-circle {
+    width: 28px;
+    height: 28px;
+    outline-width: 1px;
+    box-shadow: 0px 0px 10px rgba(55, 55, 55, 0.3);
+  }
+
+  .footer-bg-img {
+    width: 375px;
+    height: 682px;
+    object-fit: cover;
+  }
+  .subscribe-text {
+    margin-top: 80px;
+    margin-left: 24px;
+    margin-bottom: 30px;
+  }
+  .email-form {
+    margin: 10px;
+    width: 355px;
+  }
+  .input-email,
+  .input-your-email {
+    width: 355px;
+  }
+  .input-email {
+    display: none;
+  }
+  .input-your-email {
+    display: inline-block;
+  }
+  .company-name {
+    margin-top: 40px;
+    margin-left: 24px;
+  }
+  .copyright-text {
+    margin-left: 24px;
+    flex-direction: column;
+    gap: 27px;
+  }
+  .copyright-tripp {
+    display: block;
+  }
+  .sns-icon {
+    gap: 32px;
+    margin-left: 0px;
+  }
+  .icon-circle-group {
+    top: 70px;
+    left: -12px;
+  }
+  .fa-instagram {
+    margin-left: -2px;
+  }
+  .fa-linkedin {
+    margin-left: -1px;
+  }
+}
